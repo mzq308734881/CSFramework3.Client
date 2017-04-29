@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2345/WCF_Server/CommonService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="BackupDatabase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DBNAME" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BKPATH" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BackupDatabaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BackupDatabaseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAttachedFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="docID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAttachedFilesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAttachedFilesResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBackupHistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="topList" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBackupHistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetBackupHistoryResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBusinessTables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBusinessTablesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetBusinessTablesResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDB4Backup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDB4BackupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDB4BackupResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLogFieldDef">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="tableName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLogFieldDefResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLogFieldDefResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModulesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetModulesResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSystemDataSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="validationTicket" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSystemDataSetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSystemDataSetResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTableFields">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="tableName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTableFieldsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTableFieldsResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTableFieldsDef">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="tableName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="onlyDisplayField" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTableFieldsDefResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTableFieldsDefResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTracedFields">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="tableName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTracedFieldsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetTracedFieldsResult" nillable="true" type="q1:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RestoreDatabase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BKFILE" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DBNAME" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RestoreDatabaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RestoreDatabaseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveFieldDef">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="data" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveFieldDefResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveFieldDefResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="logUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tableName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateFrom" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dateTo" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchLogResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestConnection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="validationTicket" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestConnectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestConnectionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="logID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="originalData" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="changes" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="tableName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="keyFieldName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isMaster" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteLogResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataSN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="dataCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="asHeader" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataSNResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataSNResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchOutstanding">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="invoiceNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customer" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateFrom" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dateTo" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dateEnd" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="outstandingType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchOutstandingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchOutstandingResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4382d40b-fb69-4c93-9036-18e91d9bc95f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2345/WCF_Server/SalesModuleService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SalesModuleService.xsd" MetadataType="Schema" ID="f5272119-d10c-4f47-b5a5-54524c06cca1" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/SalesModuleService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SalesModuleService.wsdl" MetadataType="Wsdl" ID="0ffdc16c-5e05-47fc-96cc-c9cdbe5b968f" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/SalesModuleService.svc?wsdl" />
+    <MetadataFile FileName="SalesModuleService1.xsd" MetadataType="Schema" ID="a33c616e-f368-48ac-9506-f9d238d16200" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/SalesModuleService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

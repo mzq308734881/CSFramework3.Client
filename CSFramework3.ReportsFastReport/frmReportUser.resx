@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="DefaultLookAndFeel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="rptUser.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>180, 17</value>
+  </metadata>
+  <data name="rptUser.ReportResourceString" xml:space="preserve">
+    <value>﻿&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Report DoublePass="true" ReportInfo.Created="06/16/2011 14:52:11" ReportInfo.Modified="06/26/2011 12:13:04" ReportInfo.CreatorVersion="1.0.203.0"&gt;
+  &lt;ScriptText&gt;using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+
+namespace FastReport
+{
+  public class ReportScript
+  {   
+  }
+}
+&lt;/ScriptText&gt;
+  &lt;Dictionary/&gt;
+  &lt;ReportPage Name="Page1"&gt;
+    &lt;PageHeaderBand Name="PageHeader1" Width="718.2" Height="96.39"&gt;
+      &lt;ShapeObject Name="Shape1" Left="5.67" Top="66.15" Width="691.74" Height="30.24"/&gt;
+      &lt;RichObject Name="Rich1" Left="211.68" Top="9.45" Width="264.6" Height="47.25" Text="{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\b\f0\fs32\'d3\'c3\'bb\'a7\'c1\'d0\'b1\'ed - User Report\b0\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;RichObject Name="Rich2" Left="15.12" Top="71.82" Width="49.14" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs18\'d5\'ca\'ba\'c5\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;RichObject Name="Rich3" Left="85.05" Top="71.82" Width="77.49" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs18\'d3\'c3\'bb\'a7\'c3\'fb\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;RichObject Name="Rich4" Left="200.34" Top="71.82" Width="94.5" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs18\'c3\'dc\'c2\'eb\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;RichObject Name="Rich5" Left="398.79" Top="71.82" Width="94.5" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs18\'d7\'d4\'b6\'a8\'d2\'e5\'c8\'a1\'d6\'b5\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;RichObject Name="Rich6" Left="538.65" Top="71.82" Width="94.5" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs18\'d5\'d5\'c6\'ac\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+    &lt;/PageHeaderBand&gt;
+    &lt;DataBand Name="Data1" Top="100.39" Width="718.2" Height="26.46"&gt;
+      &lt;TextObject Name="Text7" Left="7.56" Top="5.67" Width="90.72" Height="18.9" Text="[tb_MyUser.Account]" Font="Arial, 9pt"/&gt;
+      &lt;TextObject Name="Text13" Left="100.17" Top="5.67" Width="90.72" Height="18.9" Text="[tb_MyUser.UserName]" Font="Arial, 9pt"/&gt;
+      &lt;TextObject Name="Text14" Left="202.23" Top="5.67" Width="185.22" Height="18.9" Text="[tb_MyUser.Password]" Font="Arial, 9pt"/&gt;
+      &lt;TextObject Name="Text8" Left="398.79" Top="3.78" Width="136.08" Height="18.9" Font="Arial Black, 9pt"/&gt;
+      &lt;PictureObject Name="Picture1" Left="538.65" Width="156.87" Height="26.46"/&gt;
+    &lt;/DataBand&gt;
+    &lt;ReportSummaryBand Name="ReportSummary1" Top="130.85" Width="718.2" Height="71.82"&gt;
+      &lt;TextObject Name="Text11" Left="404.46" Top="5.67" Width="321.3" Height="18.9" Text="[PageN]/[TotalPages]" Font="Arial, 9pt"/&gt;
+      &lt;TextObject Name="Text12" Left="402.57" Top="28.35" Width="179.55" Height="37.8" Text="Demo by Jonny Sun&amp;#13;&amp;#10;Date: 2011-06-08" Font="Arial, 9pt"/&gt;
+      &lt;LineObject Name="Line1" Left="7.56" Top="1.89" Width="689.85"/&gt;
+      &lt;RichObject Name="Rich7" Left="7.56" Top="7.56" Width="73.71" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs18\'b4\'f2\'d3\'a1\'ca\'b1\'bc\'e4\'a3\'ba\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;TextObject Name="Text10" Left="81.27" Top="3.78" Width="232.47" Height="18.9" Text="[Date]" Font="Arial, 9pt"/&gt;
+      &lt;RichObject Name="Rich8" Left="7.56" Top="35.91" Width="73.71" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs18\'d6\'c6\'b1\'ed\'c8\'cb\'d4\'b1\'a3\'ba\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;RichObject Name="Text16" Left="83.16" Top="35.91" Width="94.5" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;RichObject Name="Rich9" Left="328.86" Top="5.67" Width="64.26" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\qr\lang2052\f0\fs18\'d2\'b3\'c2\'eb\'a3\'ba\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+    &lt;/ReportSummaryBand&gt;
+    &lt;PageFooterBand Name="PageFooter1" Top="206.67" Width="718.2" Height="60.48"/&gt;
+  &lt;/ReportPage&gt;
+&lt;/Report&gt;
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>40</value>
+  </metadata>
+</root>

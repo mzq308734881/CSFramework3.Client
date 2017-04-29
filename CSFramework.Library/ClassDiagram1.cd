@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CSFramework.Library.ColumnFieldTool" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>CommonClass\ColumnFieldTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.ColumnLookup" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommonClass\ColumnLookup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.DataBinder" Collapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAIAAgAABAwICAEAAAkQAgEAABAIAQFAgQA=</HashCode>
+      <FileName>CommonClass\DataBinder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.DevGridView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAACCAABAggAAAAAACAAAEAABAQAAICAAAAAgAgA=</HashCode>
+      <FileName>CommonClass\DevGridView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSFramework.Library.DevStyle" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAgAAAADAABAAAAAAQAAAAAAgAAAAAABAwAAAAAA=</HashCode>
+      <FileName>CommonClass\DevStyle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.GenerateSortID" Collapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAgABAAAQAAAAAAAAAAAAAAAAAABAAEwAAEAAAAA=</HashCode>
+      <FileName>CommonClass\GenerateSortID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.MdiTools" Collapsed="true">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAACQA=</HashCode>
+      <FileName>CommonClass\MdiTools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.ModuleLoadDevComponent" Collapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommonClass\ModuleLoadDevComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.ModuleManager" Collapsed="true">
+    <Position X="21.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICAAAAAAAAAAAAAiAIBACASAEAAAAAKAAEgEAAAQAAA=</HashCode>
+      <FileName>CommonClass\ModuleManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.NavigatorBase" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommonClass\NavigatorLoader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSFramework.Library.NavigatorBarList" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQEAAAICAAAAAAAAAAAAAAAAAAAAAAAAAAAABAEA=</HashCode>
+      <FileName>CommonClass\NavigatorLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.NavigatorTreeView" Collapsed="true">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQMAAAAGAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAIA=</HashCode>
+      <FileName>CommonClass\NavigatorLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.SkinTools" Collapsed="true">
+    <Position X="30.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAACAAACAAgAAAEAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>CommonClass\SkinTools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.DevBarButtonInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAgAAQAAAigAAAAAAAACAQCABAAABAECAGAQAAAAAA=</HashCode>
+      <FileName>CommonClass\ToolbarButtons.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSFramework.Library.ToolStripButtonInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAgAAQAAAigAAAAAAAACAQCABAAABAACAGAQAAAAAA=</HashCode>
+      <FileName>CommonClass\ToolbarButtons.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSFramework.Library.ToolStripButtonSeperator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAgAAQAAACgAAAAAAAACAQAABAAABAACAGAQQAAAAA=</HashCode>
+      <FileName>CommonClass\ToolbarButtons.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSFramework.Library.MyButton" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAgAAQAAAigAAAAAAAACAQCABAAABAACAGAQAAAAAA=</HashCode>
+      <FileName>CommonClass\ToolbarButtons.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSFramework.Library.MyButtonSeperator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAgAAAAAACgAAAAAAAACAQAABAAABAACAGAQQAAAAA=</HashCode>
+      <FileName>CommonClass\ToolbarButtons.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSFramework.Library.ToolStripRegister" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAhAAAEAAAQAAAAAAAAAAAABA=</HashCode>
+      <FileName>CommonClass\ToolbarRegister.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSFramework.Library.DevBarRegister" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAhAAAEAAAQAAAAAgAAAAAAAA=</HashCode>
+      <FileName>CommonClass\ToolbarRegister.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSFramework.Library.MyToolbarRegister" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAACAAAAABAAAEAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommonClass\ToolbarRegister.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CSFramework.Library.frmBusinessLog" Collapsed="true">
+    <Position X="17" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEgQFAAgCEAIAAAAIKBAAACsCAgAAkRJAAWBAAKAOA=</HashCode>
+      <FileName>CommonForms\frmBusinessLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.frmFuzzySearch" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAMAAACAAIBQBgACAAkACAAAAAAAAAAAGAQBIAEA=</HashCode>
+      <FileName>CommonForms\frmFuzzySearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.frmGridCustomize" Collapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAwBAICBCABAAAKCABAACBgCAYBACQIgQIQIEBwA=</HashCode>
+      <FileName>CommonForms\frmGridCustomize.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.GridConfig" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAgAABMAAAAAICAAAMAAAAAEAAAAIEAAAAAABAA=</HashCode>
+      <FileName>CommonForms\frmGridCustomize.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.frmModifyLog" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEgQXIAhCABoBAAAAKAACBCkAAAYIsQYACGGAQOAAA=</HashCode>
+      <FileName>CommonForms\frmModifyLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.frmModifyPwd" Collapsed="true">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sAAAAIAAACAAABQAAACAAlACEAAAQIBAAFAAAARAIAA=</HashCode>
+      <FileName>CommonForms\frmModifyPwd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.Form1" Collapsed="true">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.frmBase" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAEAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>frmBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSFramework.Library.frmBaseBusinessForm" Collapsed="true">
+    <Position X="14.75" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAAEAAAAICABQAiAwAGIgAAyACEAAQABAAIIgFAAIIA=</HashCode>
+      <FileName>frmBaseBusinessForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSFramework.Library.frmBaseChild" Collapsed="true">
+    <Position X="14.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACBgCAAUFEGAkBACAAQFIACAABAAgAQgUBA=</HashCode>
+      <FileName>frmBaseChild.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSFramework.Library.frmBaseDataDictionary" Collapsed="true">
+    <Position X="12" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAICAAEAgAgECAAAgSAAIAAAABAAAIABAAAIA=</HashCode>
+      <FileName>frmBaseDataDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.frmBaseDataForm" Collapsed="true">
+    <Position X="13.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAgAGDYBoSQVlAgQQEGCoBiSQIEj6QIAgAAMS5FAJIA=</HashCode>
+      <FileName>frmBaseDataForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSFramework.Library.frmBaseDialog" Collapsed="true">
+    <Position X="2.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACAAAAEAAACAAEACgAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>frmBaseDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.frmModuleBase" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEUAAAACAAEAgIAQCAECACAAAAAAICAggAAAAEAAA=</HashCode>
+      <FileName>frmModuleBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CSFramework.Library.frmModuleContainer" Collapsed="true">
+    <Position X="19.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAACAAAAAAAAGAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>frmModuleContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.ResImage" Collapsed="true">
+    <Position X="28.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YABAAAAQQAgAAgIAAAEBVAAAEQEAkAACUBCECiIACIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.UserControls.ucAttachment" Collapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAgABoCEAIQAECAaABDACkAEBgEICAAAMBAAAAAI=</HashCode>
+      <FileName>UserControls\ucAttachment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.UserControls.ucCheckEdit" Collapsed="true">
+    <Position X="28.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAQADAAAgACAACAAAACAAAAAAgAACAAAAQAQAA=</HashCode>
+      <FileName>UserControls\ucCheckEdit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.UserControls.ucCheckedListBoxBinding" Collapsed="true">
+    <Position X="30.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAgAQAAiACAABAQCCAAAADAAAAEAAAEAAACAAAAAA=</HashCode>
+      <FileName>UserControls\ucCheckedListBoxBinding.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.UserControls.ucCheckedListBoxEditor" Collapsed="true">
+    <Position X="21.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAgAQAAigCAABAQCaAAAADkgAIkAAAUAAACAAAACI=</HashCode>
+      <FileName>UserControls\ucCheckedListBoxEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.UserControls.ucDT_CustomerLookup" Collapsed="true">
+    <Position X="23.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgCgCAAACCAgAgBAUADAAAgCBAAAAAAAABAACAAAAAA=</HashCode>
+      <FileName>UserControls\ucDT_CustomerLookup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.UserControls.ucDT_UserLookup" Collapsed="true">
+    <Position X="25.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACgCAAAACAgAgBAQACAAAACAAAAAAAAABAACAAAAAA=</HashCode>
+      <FileName>UserControls\ucDT_UserLookup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSFramework.Library.UserControls.ucValueEdit" Collapsed="true">
+    <Position X="27" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAQAAAAAACAACAAAAACAiAAKIAAEACAAEAAAAAAAAAA=</HashCode>
+      <FileName>UserControls\ucValueEdit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CSFramework.Library.INavigatorStyle" Collapsed="true">
+    <Position X="21.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommonClass\NavigatorLoader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CSFramework.Library.NavigatorStyle" Collapsed="true">
+    <Position X="23.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommonClass\NavigatorLoader.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CSFramework.Library.ModifyPwdType" Collapsed="true">
+    <Position X="21.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommonForms\frmModifyPwd.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="CSFramework.Library.SearchCallBack" Collapsed="true">
+    <Position X="23.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>CommonForms\frmFuzzySearch.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="CSFramework.Library.UserControls.PostAttachmentData" Collapsed="true">
+    <Position X="21.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControls\ucAttachment.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

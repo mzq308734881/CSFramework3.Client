@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="SystemSecurityService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISystemSecurityService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="14400000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2345/WCF_Server/SystemSecurityService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2345/WCF_Server/SystemSecurityService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISystemSecurityService_U_GetUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUsers" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUserReportData_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserReportData" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUserReportData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserReportDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUser" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUserGroups_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserGroups" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUserGroups_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUserByNovellID_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserByNovellID" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUserByNovellID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserByNovellIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_ExistsUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_ExistsUser" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_ExistsUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_ExistsUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_ModifyPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_ModifyPassword" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_ModifyPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_ModifyPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUserAuthorities_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserAuthorities" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUserAuthorities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserAuthoritiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_Logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_Logout" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_Logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_Login" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_ModifyPwdDirect_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_ModifyPwdDirect" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_ModifyPwdDirect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_ModifyPwdDirectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUserDirect_InputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserDirect" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_U_GetUserDirect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:U_GetUserDirectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_GetAuthorityItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetAuthorityItem" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_GetAuthorityItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetAuthorityItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_GetUserGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetUserGroup" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_GetUserGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetUserGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_GetUserGroupByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetUserGroupByCode" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_GetUserGroupByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetUserGroupByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_GetFormTagCustomName_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetFormTagCustomName" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_GetFormTagCustomName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetFormTagCustomNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_CheckNoExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_CheckNoExists" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_CheckNoExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_CheckNoExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_DeleteGroupByKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_DeleteGroupByKey" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_DeleteGroupByKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_DeleteGroupByKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_GetFormAuthority_InputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetFormAuthority" />
+  </wsdl:message>
+  <wsdl:message name="ISystemSecurityService_G_GetFormAuthority_OutputMessage">
+    <wsdl:part name="parameters" element="tns:G_GetFormAuthorityResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISystemSecurityService">
+    <wsdl:operation name="U_GetUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUsers" message="tns:ISystemSecurityService_U_GetUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUsersResponse" message="tns:ISystemSecurityService_U_GetUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserReportData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUserReportData" message="tns:ISystemSecurityService_U_GetUserReportData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUserReportDataResponse" message="tns:ISystemSecurityService_U_GetUserReportData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUser" message="tns:ISystemSecurityService_U_GetUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUserResponse" message="tns:ISystemSecurityService_U_GetUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserGroups">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUserGroups" message="tns:ISystemSecurityService_U_GetUserGroups_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUserGroupsResponse" message="tns:ISystemSecurityService_U_GetUserGroups_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserByNovellID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUserByNovellID" message="tns:ISystemSecurityService_U_GetUserByNovellID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUserByNovellIDResponse" message="tns:ISystemSecurityService_U_GetUserByNovellID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_UpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_UpdateUser" message="tns:ISystemSecurityService_U_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_UpdateUserResponse" message="tns:ISystemSecurityService_U_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_DeleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_DeleteUser" message="tns:ISystemSecurityService_U_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_DeleteUserResponse" message="tns:ISystemSecurityService_U_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_ExistsUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_ExistsUser" message="tns:ISystemSecurityService_U_ExistsUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_ExistsUserResponse" message="tns:ISystemSecurityService_U_ExistsUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_ModifyPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_ModifyPassword" message="tns:ISystemSecurityService_U_ModifyPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_ModifyPasswordResponse" message="tns:ISystemSecurityService_U_ModifyPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserAuthorities">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUserAuthorities" message="tns:ISystemSecurityService_U_GetUserAuthorities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUserAuthoritiesResponse" message="tns:ISystemSecurityService_U_GetUserAuthorities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_Logout">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_Logout" message="tns:ISystemSecurityService_U_Logout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_LogoutResponse" message="tns:ISystemSecurityService_U_Logout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_Login" message="tns:ISystemSecurityService_U_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_LoginResponse" message="tns:ISystemSecurityService_U_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_ModifyPwdDirect">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_ModifyPwdDirect" message="tns:ISystemSecurityService_U_ModifyPwdDirect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_ModifyPwdDirectResponse" message="tns:ISystemSecurityService_U_ModifyPwdDirect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserDirect">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUserDirect" message="tns:ISystemSecurityService_U_GetUserDirect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/U_GetUserDirectResponse" message="tns:ISystemSecurityService_U_GetUserDirect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_GetAuthorityItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/G_GetAuthorityItem" message="tns:ISystemSecurityService_G_GetAuthorityItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/G_GetAuthorityItemResponse" message="tns:ISystemSecurityService_G_GetAuthorityItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_GetUserGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/G_GetUserGroup" message="tns:ISystemSecurityService_G_GetUserGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/G_GetUserGroupResponse" message="tns:ISystemSecurityService_G_GetUserGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_GetUserGroupByCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/G_GetUserGroupByCode" message="tns:ISystemSecurityService_G_GetUserGroupByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/G_GetUserGroupByCodeResponse" message="tns:ISystemSecurityService_G_GetUserGroupByCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_GetFormTagCustomName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/G_GetFormTagCustomName" message="tns:ISystemSecurityService_G_GetFormTagCustomName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/G_GetFormTagCustomNameResponse" message="tns:ISystemSecurityService_G_GetFormTagCustomName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_CheckNoExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/G_CheckNoExists" message="tns:ISystemSecurityService_G_CheckNoExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/G_CheckNoExistsResponse" message="tns:ISystemSecurityService_G_CheckNoExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_DeleteGroupByKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/G_DeleteGroupByKey" message="tns:ISystemSecurityService_G_DeleteGroupByKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/G_DeleteGroupByKeyResponse" message="tns:ISystemSecurityService_G_DeleteGroupByKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="G_GetFormAuthority">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISystemSecurityService/G_GetFormAuthority" message="tns:ISystemSecurityService_G_GetFormAuthority_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISystemSecurityService/G_GetFormAuthorityResponse" message="tns:ISystemSecurityService_G_GetFormAuthority_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ISystemSecurityService" type="tns:ISystemSecurityService">
+    <wsp:PolicyReference URI="#WSHttpBinding_ISystemSecurityService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="U_GetUsers">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_GetUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserReportData">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_GetUserReportData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUser">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_GetUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserGroups">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_GetUserGroups" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserByNovellID">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_GetUserByNovellID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_UpdateUser">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_UpdateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_DeleteUser">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_DeleteUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_ExistsUser">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_ExistsUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_ModifyPassword">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_ModifyPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserAuthorities">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_GetUserAuthorities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_Logout">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_Logout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_Login">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_ModifyPwdDirect">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_ModifyPwdDirect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="U_GetUserDirect">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/U_GetUserDirect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_GetAuthorityItem">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/G_GetAuthorityItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_GetUserGroup">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/G_GetUserGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_GetUserGroupByCode">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/G_GetUserGroupByCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_GetFormTagCustomName">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/G_GetFormTagCustomName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_CheckNoExists">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/G_CheckNoExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_DeleteGroupByKey">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/G_DeleteGroupByKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="G_GetFormAuthority">
+      <soap12:operation soapAction="http://tempuri.org/ISystemSecurityService/G_GetFormAuthority" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SystemSecurityService">
+    <wsdl:port name="WSHttpBinding_ISystemSecurityService" binding="tns:WSHttpBinding_ISystemSecurityService">
+      <soap12:address location="http://localhost:2345/WCF_Server/SystemSecurityService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:2345/WCF_Server/SystemSecurityService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

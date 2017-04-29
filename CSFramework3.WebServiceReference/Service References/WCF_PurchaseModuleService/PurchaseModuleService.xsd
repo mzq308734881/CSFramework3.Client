@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PO_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="docNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PO_DeleteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_GetBusinessByKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="docNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_GetBusinessByKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PO_GetBusinessByKeyResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_GetReportData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="DocNoFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocNoTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DateFrom" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="DateTo" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_GetReportDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PO_GetReportDataResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_GetSummaryByParam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="docNoFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="docNoTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="docDateFrom" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="docDateTo" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="StockCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Customer" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_GetSummaryByParamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PO_GetSummaryByParamResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_Update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="data" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_UpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PO_UpdateResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_CheckNoExists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_CheckNoExistsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PO_CheckNoExistsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_ApprovalBusiness">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="flagApp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PO_ApprovalBusinessResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

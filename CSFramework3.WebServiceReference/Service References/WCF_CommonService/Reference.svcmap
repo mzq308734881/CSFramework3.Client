@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="593a597a-0ada-467c-9a37-45f250799200" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address=" http://localhost:2345/WCF_Server/CommonService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CommonService.disco" MetadataType="Disco" ID="529b77a8-545c-4894-8a95-636c3fb5a81d" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/CommonService.svc?disco" />
+    <MetadataFile FileName="CommonService.wsdl" MetadataType="Wsdl" ID="23f39d91-fc66-4630-a905-23dd49a79a98" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/CommonService.svc?wsdl" />
+    <MetadataFile FileName="CommonService.xsd" MetadataType="Schema" ID="66b4ccd4-247f-4fbf-93e7-d27c45e1a537" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/CommonService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CommonService1.xsd" MetadataType="Schema" ID="d35f9ee6-3e84-404c-89ac-bb4def784e81" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/CommonService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CommonService2.xsd" MetadataType="Schema" ID="1b639d27-0db6-4194-9c08-d3c57055bca3" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/CommonService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

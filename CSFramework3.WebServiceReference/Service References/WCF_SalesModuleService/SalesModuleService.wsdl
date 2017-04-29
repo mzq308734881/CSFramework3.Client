@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="SalesModuleService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISalesModuleService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="14400000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2345/WCF_Server/SalesModuleService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2345/WCF_Server/SalesModuleService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISalesModuleService_SC_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:SC_Delete" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SC_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SC_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_ApprovalBusiness_InputMessage">
+    <wsdl:part name="parameters" element="tns:SO_ApprovalBusiness" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_ApprovalBusiness_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SO_ApprovalBusinessResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_CheckNoExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:SO_CheckNoExists" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_CheckNoExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SO_CheckNoExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:SO_Delete" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SO_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_GetBusinessByKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:SO_GetBusinessByKey" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_GetBusinessByKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SO_GetBusinessByKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_GetReportData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SO_GetReportData" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_GetReportData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SO_GetReportDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_GetSummaryByParam_InputMessage">
+    <wsdl:part name="parameters" element="tns:SO_GetSummaryByParam" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_GetSummaryByParam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SO_GetSummaryByParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:SO_Update" />
+  </wsdl:message>
+  <wsdl:message name="ISalesModuleService_SO_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SO_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISalesModuleService">
+    <wsdl:operation name="SC_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesModuleService/SC_Delete" message="tns:ISalesModuleService_SC_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesModuleService/SC_DeleteResponse" message="tns:ISalesModuleService_SC_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SO_ApprovalBusiness">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesModuleService/SO_ApprovalBusiness" message="tns:ISalesModuleService_SO_ApprovalBusiness_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesModuleService/SO_ApprovalBusinessResponse" message="tns:ISalesModuleService_SO_ApprovalBusiness_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SO_CheckNoExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesModuleService/SO_CheckNoExists" message="tns:ISalesModuleService_SO_CheckNoExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesModuleService/SO_CheckNoExistsResponse" message="tns:ISalesModuleService_SO_CheckNoExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SO_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesModuleService/SO_Delete" message="tns:ISalesModuleService_SO_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesModuleService/SO_DeleteResponse" message="tns:ISalesModuleService_SO_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SO_GetBusinessByKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesModuleService/SO_GetBusinessByKey" message="tns:ISalesModuleService_SO_GetBusinessByKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesModuleService/SO_GetBusinessByKeyResponse" message="tns:ISalesModuleService_SO_GetBusinessByKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SO_GetReportData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesModuleService/SO_GetReportData" message="tns:ISalesModuleService_SO_GetReportData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesModuleService/SO_GetReportDataResponse" message="tns:ISalesModuleService_SO_GetReportData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SO_GetSummaryByParam">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesModuleService/SO_GetSummaryByParam" message="tns:ISalesModuleService_SO_GetSummaryByParam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesModuleService/SO_GetSummaryByParamResponse" message="tns:ISalesModuleService_SO_GetSummaryByParam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SO_Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalesModuleService/SO_Update" message="tns:ISalesModuleService_SO_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalesModuleService/SO_UpdateResponse" message="tns:ISalesModuleService_SO_Update_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ISalesModuleService" type="tns:ISalesModuleService">
+    <wsp:PolicyReference URI="#WSHttpBinding_ISalesModuleService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SC_Delete">
+      <soap12:operation soapAction="http://tempuri.org/ISalesModuleService/SC_Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SO_ApprovalBusiness">
+      <soap12:operation soapAction="http://tempuri.org/ISalesModuleService/SO_ApprovalBusiness" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SO_CheckNoExists">
+      <soap12:operation soapAction="http://tempuri.org/ISalesModuleService/SO_CheckNoExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SO_Delete">
+      <soap12:operation soapAction="http://tempuri.org/ISalesModuleService/SO_Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SO_GetBusinessByKey">
+      <soap12:operation soapAction="http://tempuri.org/ISalesModuleService/SO_GetBusinessByKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SO_GetReportData">
+      <soap12:operation soapAction="http://tempuri.org/ISalesModuleService/SO_GetReportData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SO_GetSummaryByParam">
+      <soap12:operation soapAction="http://tempuri.org/ISalesModuleService/SO_GetSummaryByParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SO_Update">
+      <soap12:operation soapAction="http://tempuri.org/ISalesModuleService/SO_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SalesModuleService">
+    <wsdl:port name="WSHttpBinding_ISalesModuleService" binding="tns:WSHttpBinding_ISalesModuleService">
+      <soap12:address location="http://localhost:2345/WCF_Server/SalesModuleService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:2345/WCF_Server/SalesModuleService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

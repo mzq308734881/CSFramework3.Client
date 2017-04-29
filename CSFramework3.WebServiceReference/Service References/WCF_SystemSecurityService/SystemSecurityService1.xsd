@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2345/WCF_Server/SystemSecurityService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="U_GetUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_GetUsersResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUserReportData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="createDateFrom" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="createDateTo" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUserReportDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_GetUserReportDataResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="account" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_GetUserResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUserGroups">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="account" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUserGroupsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_GetUserGroupsResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUserByNovellID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="novellAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUserByNovellIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_GetUserByNovellIDResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_UpdateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="userData" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_UpdateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_UpdateUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_DeleteUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="account" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_DeleteUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_DeleteUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_ExistsUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="account" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_ExistsUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_ExistsUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_ModifyPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="account" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_ModifyPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_ModifyPasswordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUserAuthorities">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUserAuthoritiesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_GetUserAuthoritiesResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_Logout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_LogoutResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_Login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="validationTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="loginUser" nillable="true" type="xs:base64Binary" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="LoginUserType" type="q1:char" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_LoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_LoginResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_ModifyPwdDirect">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="validationTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="account" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pwd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DBName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_ModifyPwdDirectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_ModifyPwdDirectResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUserDirect">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="validationTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="account" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DBName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="U_GetUserDirectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="U_GetUserDirectResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_GetAuthorityItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_GetAuthorityItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="G_GetAuthorityItemResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_GetUserGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_GetUserGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="G_GetUserGroupResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_GetUserGroupByCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="groupCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_GetUserGroupByCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="G_GetUserGroupByCodeResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_GetFormTagCustomName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_GetFormTagCustomNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="G_GetFormTagCustomNameResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_CheckNoExists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="groupCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_CheckNoExistsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="G_CheckNoExistsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_DeleteGroupByKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="groupCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_DeleteGroupByKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="G_DeleteGroupByKeyResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_GetFormAuthority">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="account" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="moduleID" type="xs:int" />
+        <xs:element minOccurs="0" name="menuName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="G_GetFormAuthorityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="G_GetFormAuthorityResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

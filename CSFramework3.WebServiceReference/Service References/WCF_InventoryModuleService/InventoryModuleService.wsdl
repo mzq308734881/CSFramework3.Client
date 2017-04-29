@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="InventoryModuleService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IInventoryModuleService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="14400000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2345/WCF_Server/InventoryModuleService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2345/WCF_Server/InventoryModuleService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IInventoryModuleService_IA_ApprovalBusiness_InputMessage">
+    <wsdl:part name="parameters" element="tns:IA_ApprovalBusiness" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IA_ApprovalBusiness_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IA_ApprovalBusinessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IA_CheckNoExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:IA_CheckNoExists" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IA_CheckNoExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IA_CheckNoExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IA_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:IA_Delete" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IA_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IA_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IA_GetBusinessByKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:IA_GetBusinessByKey" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IA_GetBusinessByKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IA_GetBusinessByKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IA_GetSummaryByParam_InputMessage">
+    <wsdl:part name="parameters" element="tns:IA_GetSummaryByParam" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IA_GetSummaryByParam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IA_GetSummaryByParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IA_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:IA_Update" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IA_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IA_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IC_ApprovalBusiness_InputMessage">
+    <wsdl:part name="parameters" element="tns:IC_ApprovalBusiness" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IC_ApprovalBusiness_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IC_ApprovalBusinessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IC_CheckNoExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:IC_CheckNoExists" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IC_CheckNoExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IC_CheckNoExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IC_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:IC_Delete" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IC_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IC_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IC_GetBusinessByKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:IC_GetBusinessByKey" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IC_GetBusinessByKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IC_GetBusinessByKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IC_GetSummaryByParam_InputMessage">
+    <wsdl:part name="parameters" element="tns:IC_GetSummaryByParam" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IC_GetSummaryByParam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IC_GetSummaryByParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IC_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:IC_Update" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IC_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IC_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IN_ApprovalBusiness_InputMessage">
+    <wsdl:part name="parameters" element="tns:IN_ApprovalBusiness" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IN_ApprovalBusiness_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IN_ApprovalBusinessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IN_CheckNoExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:IN_CheckNoExists" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IN_CheckNoExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IN_CheckNoExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IN_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:IN_Delete" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IN_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IN_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IN_GetBusinessByKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:IN_GetBusinessByKey" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IN_GetBusinessByKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IN_GetBusinessByKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IN_GetSummaryByParam_InputMessage">
+    <wsdl:part name="parameters" element="tns:IN_GetSummaryByParam" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IN_GetSummaryByParam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IN_GetSummaryByParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IN_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:IN_Update" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IN_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IN_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IO_ApprovalBusiness_InputMessage">
+    <wsdl:part name="parameters" element="tns:IO_ApprovalBusiness" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IO_ApprovalBusiness_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IO_ApprovalBusinessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IO_CheckNoExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:IO_CheckNoExists" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IO_CheckNoExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IO_CheckNoExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IO_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:IO_Delete" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IO_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IO_DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IO_GetBusinessByKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:IO_GetBusinessByKey" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IO_GetBusinessByKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IO_GetBusinessByKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IO_GetSummaryByParam_InputMessage">
+    <wsdl:part name="parameters" element="tns:IO_GetSummaryByParam" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IO_GetSummaryByParam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IO_GetSummaryByParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IO_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:IO_Update" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryModuleService_IO_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IO_UpdateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IInventoryModuleService">
+    <wsdl:operation name="IA_ApprovalBusiness">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IA_ApprovalBusiness" message="tns:IInventoryModuleService_IA_ApprovalBusiness_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IA_ApprovalBusinessResponse" message="tns:IInventoryModuleService_IA_ApprovalBusiness_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IA_CheckNoExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IA_CheckNoExists" message="tns:IInventoryModuleService_IA_CheckNoExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IA_CheckNoExistsResponse" message="tns:IInventoryModuleService_IA_CheckNoExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IA_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IA_Delete" message="tns:IInventoryModuleService_IA_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IA_DeleteResponse" message="tns:IInventoryModuleService_IA_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IA_GetBusinessByKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IA_GetBusinessByKey" message="tns:IInventoryModuleService_IA_GetBusinessByKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IA_GetBusinessByKeyResponse" message="tns:IInventoryModuleService_IA_GetBusinessByKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IA_GetSummaryByParam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IA_GetSummaryByParam" message="tns:IInventoryModuleService_IA_GetSummaryByParam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IA_GetSummaryByParamResponse" message="tns:IInventoryModuleService_IA_GetSummaryByParam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IA_Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IA_Update" message="tns:IInventoryModuleService_IA_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IA_UpdateResponse" message="tns:IInventoryModuleService_IA_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IC_ApprovalBusiness">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IC_ApprovalBusiness" message="tns:IInventoryModuleService_IC_ApprovalBusiness_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IC_ApprovalBusinessResponse" message="tns:IInventoryModuleService_IC_ApprovalBusiness_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IC_CheckNoExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IC_CheckNoExists" message="tns:IInventoryModuleService_IC_CheckNoExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IC_CheckNoExistsResponse" message="tns:IInventoryModuleService_IC_CheckNoExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IC_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IC_Delete" message="tns:IInventoryModuleService_IC_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IC_DeleteResponse" message="tns:IInventoryModuleService_IC_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IC_GetBusinessByKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IC_GetBusinessByKey" message="tns:IInventoryModuleService_IC_GetBusinessByKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IC_GetBusinessByKeyResponse" message="tns:IInventoryModuleService_IC_GetBusinessByKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IC_GetSummaryByParam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IC_GetSummaryByParam" message="tns:IInventoryModuleService_IC_GetSummaryByParam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IC_GetSummaryByParamResponse" message="tns:IInventoryModuleService_IC_GetSummaryByParam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IC_Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IC_Update" message="tns:IInventoryModuleService_IC_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IC_UpdateResponse" message="tns:IInventoryModuleService_IC_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IN_ApprovalBusiness">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IN_ApprovalBusiness" message="tns:IInventoryModuleService_IN_ApprovalBusiness_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IN_ApprovalBusinessResponse" message="tns:IInventoryModuleService_IN_ApprovalBusiness_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IN_CheckNoExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IN_CheckNoExists" message="tns:IInventoryModuleService_IN_CheckNoExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IN_CheckNoExistsResponse" message="tns:IInventoryModuleService_IN_CheckNoExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IN_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IN_Delete" message="tns:IInventoryModuleService_IN_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IN_DeleteResponse" message="tns:IInventoryModuleService_IN_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IN_GetBusinessByKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IN_GetBusinessByKey" message="tns:IInventoryModuleService_IN_GetBusinessByKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IN_GetBusinessByKeyResponse" message="tns:IInventoryModuleService_IN_GetBusinessByKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IN_GetSummaryByParam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IN_GetSummaryByParam" message="tns:IInventoryModuleService_IN_GetSummaryByParam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IN_GetSummaryByParamResponse" message="tns:IInventoryModuleService_IN_GetSummaryByParam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IN_Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IN_Update" message="tns:IInventoryModuleService_IN_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IN_UpdateResponse" message="tns:IInventoryModuleService_IN_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IO_ApprovalBusiness">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IO_ApprovalBusiness" message="tns:IInventoryModuleService_IO_ApprovalBusiness_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IO_ApprovalBusinessResponse" message="tns:IInventoryModuleService_IO_ApprovalBusiness_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IO_CheckNoExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IO_CheckNoExists" message="tns:IInventoryModuleService_IO_CheckNoExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IO_CheckNoExistsResponse" message="tns:IInventoryModuleService_IO_CheckNoExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IO_Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IO_Delete" message="tns:IInventoryModuleService_IO_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IO_DeleteResponse" message="tns:IInventoryModuleService_IO_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IO_GetBusinessByKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IO_GetBusinessByKey" message="tns:IInventoryModuleService_IO_GetBusinessByKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IO_GetBusinessByKeyResponse" message="tns:IInventoryModuleService_IO_GetBusinessByKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IO_GetSummaryByParam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IO_GetSummaryByParam" message="tns:IInventoryModuleService_IO_GetSummaryByParam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IO_GetSummaryByParamResponse" message="tns:IInventoryModuleService_IO_GetSummaryByParam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IO_Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryModuleService/IO_Update" message="tns:IInventoryModuleService_IO_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryModuleService/IO_UpdateResponse" message="tns:IInventoryModuleService_IO_Update_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IInventoryModuleService" type="tns:IInventoryModuleService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IInventoryModuleService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IA_ApprovalBusiness">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IA_ApprovalBusiness" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IA_CheckNoExists">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IA_CheckNoExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IA_Delete">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IA_Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IA_GetBusinessByKey">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IA_GetBusinessByKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IA_GetSummaryByParam">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IA_GetSummaryByParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IA_Update">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IA_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IC_ApprovalBusiness">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IC_ApprovalBusiness" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IC_CheckNoExists">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IC_CheckNoExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IC_Delete">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IC_Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IC_GetBusinessByKey">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IC_GetBusinessByKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IC_GetSummaryByParam">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IC_GetSummaryByParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IC_Update">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IC_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IN_ApprovalBusiness">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IN_ApprovalBusiness" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IN_CheckNoExists">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IN_CheckNoExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IN_Delete">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IN_Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IN_GetBusinessByKey">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IN_GetBusinessByKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IN_GetSummaryByParam">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IN_GetSummaryByParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IN_Update">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IN_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IO_ApprovalBusiness">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IO_ApprovalBusiness" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IO_CheckNoExists">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IO_CheckNoExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IO_Delete">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IO_Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IO_GetBusinessByKey">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IO_GetBusinessByKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IO_GetSummaryByParam">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IO_GetSummaryByParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IO_Update">
+      <soap12:operation soapAction="http://tempuri.org/IInventoryModuleService/IO_Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InventoryModuleService">
+    <wsdl:port name="WSHttpBinding_IInventoryModuleService" binding="tns:WSHttpBinding_IInventoryModuleService">
+      <soap12:address location="http://localhost:2345/WCF_Server/InventoryModuleService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:2345/WCF_Server/InventoryModuleService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

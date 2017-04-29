@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="DataDictService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IDataDictService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="14400000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2345/WCF_Server/DataDictService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2345/WCF_Server/DataDictService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDataDictService_AddCommonType_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCommonType" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_AddCommonType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCommonTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_CheckNoExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckNoExists" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_CheckNoExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckNoExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_DeleteCommonType_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCommonType" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_DeleteCommonType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCommonTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_DownloadDicts_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadDicts" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_DownloadDicts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadDictsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_FuzzySearchCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:FuzzySearchCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_FuzzySearchCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FuzzySearchCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_FuzzySearchCustomerByContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:FuzzySearchCustomerByContent" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_FuzzySearchCustomerByContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FuzzySearchCustomerByContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_FuzzySearchCustomerByAttributes_InputMessage">
+    <wsdl:part name="parameters" element="tns:FuzzySearchCustomerByAttributes" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_FuzzySearchCustomerByAttributes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FuzzySearchCustomerByAttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_FuzzySearchProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:FuzzySearchProduct" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_FuzzySearchProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FuzzySearchProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_GetCustomerByAttributeCodes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerByAttributeCodes" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_GetCustomerByAttributeCodes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerByAttributeCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_GetDataByKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataByKey" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_GetDataByKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataByKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_GetDataDictByTableName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataDictByTableName" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_GetDataDictByTableName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataDictByTableNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_GetSummaryData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummaryData" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_GetSummaryData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummaryDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_IsExistsCommonType_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsExistsCommonType" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_IsExistsCommonType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsExistsCommonTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_SearchCommonType_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCommonType" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_SearchCommonType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCommonTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_UpdateEx_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEx" />
+  </wsdl:message>
+  <wsdl:message name="IDataDictService_UpdateEx_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateExResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDataDictService">
+    <wsdl:operation name="AddCommonType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/AddCommonType" message="tns:IDataDictService_AddCommonType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/AddCommonTypeResponse" message="tns:IDataDictService_AddCommonType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckNoExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/CheckNoExists" message="tns:IDataDictService_CheckNoExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/CheckNoExistsResponse" message="tns:IDataDictService_CheckNoExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/Delete" message="tns:IDataDictService_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/DeleteResponse" message="tns:IDataDictService_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCommonType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/DeleteCommonType" message="tns:IDataDictService_DeleteCommonType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/DeleteCommonTypeResponse" message="tns:IDataDictService_DeleteCommonType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadDicts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/DownloadDicts" message="tns:IDataDictService_DownloadDicts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/DownloadDictsResponse" message="tns:IDataDictService_DownloadDicts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FuzzySearchCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/FuzzySearchCustomer" message="tns:IDataDictService_FuzzySearchCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/FuzzySearchCustomerResponse" message="tns:IDataDictService_FuzzySearchCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FuzzySearchCustomerByContent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/FuzzySearchCustomerByContent" message="tns:IDataDictService_FuzzySearchCustomerByContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/FuzzySearchCustomerByContentResponse" message="tns:IDataDictService_FuzzySearchCustomerByContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FuzzySearchCustomerByAttributes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/FuzzySearchCustomerByAttributes" message="tns:IDataDictService_FuzzySearchCustomerByAttributes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/FuzzySearchCustomerByAttributesResponse" message="tns:IDataDictService_FuzzySearchCustomerByAttributes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FuzzySearchProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/FuzzySearchProduct" message="tns:IDataDictService_FuzzySearchProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/FuzzySearchProductResponse" message="tns:IDataDictService_FuzzySearchProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByAttributeCodes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/GetCustomerByAttributeCodes" message="tns:IDataDictService_GetCustomerByAttributeCodes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/GetCustomerByAttributeCodesResponse" message="tns:IDataDictService_GetCustomerByAttributeCodes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataByKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/GetDataByKey" message="tns:IDataDictService_GetDataByKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/GetDataByKeyResponse" message="tns:IDataDictService_GetDataByKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataDictByTableName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/GetDataDictByTableName" message="tns:IDataDictService_GetDataDictByTableName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/GetDataDictByTableNameResponse" message="tns:IDataDictService_GetDataDictByTableName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSummaryData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/GetSummaryData" message="tns:IDataDictService_GetSummaryData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/GetSummaryDataResponse" message="tns:IDataDictService_GetSummaryData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsExistsCommonType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/IsExistsCommonType" message="tns:IDataDictService_IsExistsCommonType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/IsExistsCommonTypeResponse" message="tns:IDataDictService_IsExistsCommonType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchCommonType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/SearchCommonType" message="tns:IDataDictService_SearchCommonType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/SearchCommonTypeResponse" message="tns:IDataDictService_SearchCommonType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/Update" message="tns:IDataDictService_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/UpdateResponse" message="tns:IDataDictService_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEx">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataDictService/UpdateEx" message="tns:IDataDictService_UpdateEx_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataDictService/UpdateExResponse" message="tns:IDataDictService_UpdateEx_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IDataDictService" type="tns:IDataDictService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IDataDictService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddCommonType">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/AddCommonType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckNoExists">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/CheckNoExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCommonType">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/DeleteCommonType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadDicts">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/DownloadDicts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FuzzySearchCustomer">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/FuzzySearchCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FuzzySearchCustomerByContent">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/FuzzySearchCustomerByContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FuzzySearchCustomerByAttributes">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/FuzzySearchCustomerByAttributes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FuzzySearchProduct">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/FuzzySearchProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByAttributeCodes">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/GetCustomerByAttributeCodes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataByKey">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/GetDataByKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataDictByTableName">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/GetDataDictByTableName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSummaryData">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/GetSummaryData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsExistsCommonType">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/IsExistsCommonType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchCommonType">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/SearchCommonType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEx">
+      <soap12:operation soapAction="http://tempuri.org/IDataDictService/UpdateEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataDictService">
+    <wsdl:port name="WSHttpBinding_IDataDictService" binding="tns:WSHttpBinding_IDataDictService">
+      <soap12:address location="http://localhost:2345/WCF_Server/DataDictService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:2345/WCF_Server/DataDictService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

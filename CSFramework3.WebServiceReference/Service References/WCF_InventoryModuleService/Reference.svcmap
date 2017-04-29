@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b83751f9-957a-4340-9d7e-1b5a5aed0f87" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2345/WCF_Server/InventoryModuleService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InventoryModuleService.disco" MetadataType="Disco" ID="5e48b6b5-55f0-4549-bf25-00c1153dc30e" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/InventoryModuleService.svc?disco" />
+    <MetadataFile FileName="InventoryModuleService.xsd" MetadataType="Schema" ID="d58fc459-a0fd-4968-be74-a27b88c501c7" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/InventoryModuleService.svc?xsd=xsd1" />
+    <MetadataFile FileName="InventoryModuleService.wsdl" MetadataType="Wsdl" ID="d4be3de5-53b4-4cc4-81d3-4d3fb55e4af6" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/InventoryModuleService.svc?wsdl" />
+    <MetadataFile FileName="InventoryModuleService1.xsd" MetadataType="Schema" ID="e07a4bae-57da-4dec-80ff-b317c195e07e" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/InventoryModuleService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

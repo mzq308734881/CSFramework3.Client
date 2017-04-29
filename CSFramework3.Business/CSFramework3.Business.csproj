@@ -1,0 +1,125 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A674DB78-C6CB-409B-893D-728ABF88EC84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSFramework3.Business</RootNamespace>
+    <AssemblyName>CSFramework3.Business</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bllAttachmentLib.cs" />
+    <Compile Include="bllCompanyInfo.cs" />
+    <Compile Include="BLL_Base\bllBase.cs" />
+    <Compile Include="BLL_Base\bllBaseBusiness.cs" />
+    <Compile Include="BLL_Base\bllBaseDataDict.cs" />
+    <Compile Include="bllLocalLog.cs" />
+    <Compile Include="BLL_Business\bllBusinessLog.cs" />
+    <Compile Include="BLL_Business\bllPO.cs" />
+    <Compile Include="BLL_Business\bllSO.cs" />
+    <Compile Include="BLL_Business\bllUnknow.cs" />
+    <Compile Include="BLL_Business\bllIA.cs" />
+    <Compile Include="BLL_Business\bllIN.cs" />
+    <Compile Include="BLL_Business\bllIO.cs" />
+    <Compile Include="BLL_Business\bllIC.cs" />
+    <Compile Include="BLL_Business\bllAR.cs" />
+    <Compile Include="BLL_Business\bllAP.cs" />
+    <Compile Include="BLL_DataDict\bllCommonDataDict.cs" />
+    <Compile Include="BLL_DataDict\bllCustomer.cs" />
+    <Compile Include="BLL_DataDict\bllPerson.cs" />
+    <Compile Include="BLL_DataDict\bllNullObjectDataDict.cs" />
+    <Compile Include="BLL_DataDict\bllProduct.cs" />
+    <Compile Include="BLL_DataDict\bllAccountIDs.cs" />
+    <Compile Include="CommonData.cs" />
+    <Compile Include="GenerateItemsDef.cs" />
+    <Compile Include="Security\ActionNodeTag.cs" />
+    <Compile Include="Security\AuthNodeTag.cs" />
+    <Compile Include="Security\bllGroupAuthority.cs" />
+    <Compile Include="Security\bllMenuMgr.cs" />
+    <Compile Include="Security\DomainLdapTools.cs" />
+    <Compile Include="Security\LoginAuthorization.cs" />
+    <Compile Include="Security\NovellLdapTools.cs" />
+    <Compile Include="Security\bllUser.cs" />
+    <Compile Include="DataDictCache.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSFramework.Common\CSFramework.Common.csproj">
+      <Project>{269ECEFF-B6C2-4708-86BA-AFBB1A2B045C}</Project>
+      <Name>CSFramework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSFramework.Core\CSFramework.Core.csproj">
+      <Project>{2A59861C-5D4D-4768-B31F-7F59A8517DAE}</Project>
+      <Name>CSFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSFramework.ORM\CSFramework.ORM.csproj">
+      <Project>{34000ABD-4169-45B5-A668-1901F1EB5FDE}</Project>
+      <Name>CSFramework.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSFramework3.Bridge\CSFramework3.Bridge.csproj">
+      <Project>{C722EFFF-6985-478D-9BB2-C536821AC2FE}</Project>
+      <Name>CSFramework3.Bridge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSFramework3.Interfaces\CSFramework3.Interfaces.csproj">
+      <Project>{E96FA431-A247-49F3-892B-03E411957180}</Project>
+      <Name>CSFramework3.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSFramework3.Models\CSFramework3.Models.csproj">
+      <Project>{2CF256B2-F5E0-4670-8644-08DDF65B0009}</Project>
+      <Name>CSFramework3.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSFramework3.WebServiceReference\CSFramework3.WebServiceReference.csproj">
+      <Project>{830D9756-D0F4-4140-8AFC-500E8ECA03C4}</Project>
+      <Name>CSFramework3.WebServiceReference</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="DefaultLookAndFeel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="rptSO.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>180, 17</value>
+  </metadata>
+  <data name="rptSO.ReportResourceString" xml:space="preserve">
+    <value>﻿&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Report DoublePass="true" ReportInfo.Created="06/16/2011 15:35:29" ReportInfo.Modified="06/26/2011 12:06:26" ReportInfo.CreatorVersion="1.0.203.0"&gt;
+  &lt;Dictionary&gt;
+    &lt;Total Name="Total" Expression="[D.Amount]" Evaluator="Data2" PrintOn="GroupFooter1"/&gt;
+    &lt;Total Name="Total_M" Expression="[M.Amount]" Evaluator="Data1" PrintOn="ReportSummary1"/&gt;
+  &lt;/Dictionary&gt;
+  &lt;ReportPage Name="Page1"&gt;
+    &lt;ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8"/&gt;
+    &lt;PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="73.71" Guides="3.78"&gt;
+      &lt;ShapeObject Name="Shape1" Left="574.56" Top="7.56" Width="120.96" Height="64.26"/&gt;
+      &lt;RichObject Name="Rich1" Left="189" Top="9.45" Width="264.6" Height="62.37" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\qc\lang2052\b\f0\fs32\'cf\'fa\'ca\'db\'b6\'a9\'b5\'a5 \par&amp;#13;&amp;#10;(Sales Order Report)\b0\fs20\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;RichObject Name="Rich13" Left="584.01" Top="17.01" Width="94.5" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil Arial;}{\f1\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20 [PageN] / [TotalPages]\f1\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;RichObject Name="Rich14" Left="584.01" Top="45.36" Width="94.5" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil Arial;}{\f1\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20 [PageNofM]\f1\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+    &lt;/PageHeaderBand&gt;
+    &lt;GroupHeaderBand Name="GroupHeader1" Top="119.51" Width="718.2" Height="13.23" Condition="[M.SONO]"&gt;
+      &lt;DataBand Name="Data1" Top="136.74" Width="718.2" Height="69.93"&gt;
+        &lt;LineObject Name="Line2" Left="3.78" Top="69.93" Width="691.74"/&gt;
+        &lt;LineObject Name="Line1" Left="3.78" Top="49.14" Width="691.74"/&gt;
+        &lt;RichObject Name="Rich6" Left="3.78" Top="1.89" Width="489.51" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'bf\'cd\'bb\'a7\'a3\'ba[M.CustomerCode]([M.NativeName])\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich7" Left="3.78" Top="22.68" Width="141.75" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'d3\'aa\'cf\'fa\'d4\'b1\'a3\'ba[M.SalesMan]\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich8" Left="147.42" Top="22.68" Width="141.75" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'b8\'b6\'bf\'ee\'b7\'bd\'ca\'bd\'a3\'ba[M.PayType]\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich9" Left="510.3" Top="1.89" Width="136.08" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'b6\'a9\'b5\'a5\'ba\'c5\'c2\'eb\'a3\'ba[M.SONO]\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich10" Left="510.3" Top="24.57" Width="136.08" Height="15.12" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'bd\'d3\'b5\'a5\'c8\'d5\'c6\'da\'a3\'ba[M.ReceiveDay]\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich11" Left="391.23" Top="20.79" Width="115.29" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'bd\'f0\'b6\'ee\'a3\'ba[M.Amount]\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich12" Left="292.95" Top="22.68" Width="96.39" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'bb\'f5\'b1\'d2\'a3\'ba[M.Currency]\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich17" Left="9.45" Top="51.03" Width="62.37" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'b2\'fa\'c6\'b7\'b1\'e0\'ba\'c5\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich18" Left="75.6" Top="51.03" Width="160.65" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'b2\'fa\'c6\'b7\'c3\'fb\'b3\'c6\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich19" Left="240.03" Top="51.03" Width="56.7" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'b9\'a9\'d3\'a6\'c9\'cc\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich22" Left="453.6" Top="51.03" Width="68.04" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'ca\'fd\'c1\'bf\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich23" Left="519.75" Top="51.03" Width="62.37" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'b5\'a5\'bc\'db\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich24" Left="589.68" Top="51.03" Width="94.5" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'bd\'f0\'b6\'ee\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;DataBand Name="Data2" Top="210.67" Width="718.2" Height="18.9"&gt;
+          &lt;RichObject Name="Rich25" Left="9.45" Width="62.37" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20 [D.StockCode]\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+          &lt;RichObject Name="Rich26" Left="75.6" Width="160.65" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20 [D.NativeName]\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+          &lt;RichObject Name="Rich27" Left="240.03" Width="141.75" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}{\f1\fnil\fcharset0 Tahoma;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20 [D.\f1 Supplier\f0 ]\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+          &lt;RichObject Name="Rich30" Left="453.6" Width="68.04" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}{\f1\fnil\fcharset0 Tahoma;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20 [D.\f1 Qty\f0 ]\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+          &lt;RichObject Name="Rich31" Left="519.75" Width="62.37" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20 [D.Price]\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+          &lt;RichObject Name="Rich32" Left="589.68" Width="94.5" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20 [D.Amount]\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;/DataBand&gt;
+      &lt;/DataBand&gt;
+      &lt;GroupFooterBand Name="GroupFooter1" Top="233.57" Width="718.2" Height="35.91"&gt;
+        &lt;LineObject Name="Line3" Left="5.67" Top="1.89" Width="691.74"/&gt;
+        &lt;RichObject Name="Rich4" Left="531.09" Top="7.56" Width="56.7" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'d0\'a1\'bc\'c6\'a3\'ba\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+        &lt;RichObject Name="Rich15" Left="589.68" Top="7.56" Width="94.5" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil Arial;}{\f1\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20 [Total]\f1\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;/GroupFooterBand&gt;
+    &lt;/GroupHeaderBand&gt;
+    &lt;ReportSummaryBand Name="ReportSummary1" Top="273.48" Width="718.2" Height="28.35"&gt;
+      &lt;RichObject Name="Rich5" Left="531.09" Top="3.78" Width="56.7" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'d7\'dc\'bc\'c6\'a3\'ba\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;RichObject Name="Rich16" Left="589.68" Top="3.78" Width="94.5" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil Arial;}{\f1\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20 [Total_M]\f1\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+    &lt;/ReportSummaryBand&gt;
+    &lt;PageFooterBand Name="PageFooter1" Top="305.83" Width="718.2" Height="60.48"&gt;
+      &lt;RichObject Name="Rich2" Left="466.83" Top="5.67" Width="217.35" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs18\'b4\'f2\'d3\'a1\'c8\'d5\'c6\'da\'a3\'ba[Date]\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;RichObject Name="Rich3" Left="11.34" Top="5.67" Width="77.49" Height="20.79" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs20\'b4\'f2\'d3\'a1\'c8\'cb\'d4\'b1\'a3\'ba\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+      &lt;RichObject Name="Text52" Left="90.72" Top="7.56" Width="255.15" Height="18.9" Text="{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}&amp;#13;&amp;#10;\viewkind4\uc1\pard\lang2052\f0\fs18\par&amp;#13;&amp;#10;}&amp;#13;&amp;#10;"/&gt;
+    &lt;/PageFooterBand&gt;
+  &lt;/ReportPage&gt;
+&lt;/Report&gt;
+</value>
+  </data>
+</root>

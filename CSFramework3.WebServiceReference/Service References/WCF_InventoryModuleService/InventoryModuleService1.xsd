@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="IA_ApprovalBusiness">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="flagApp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IA_ApprovalBusinessResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IA_CheckNoExists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IA_CheckNoExistsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IA_CheckNoExistsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IA_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IA_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IA_DeleteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IA_GetBusinessByKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IA_GetBusinessByKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IA_GetBusinessByKeyResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IA_GetSummaryByParam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="DocNoFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocNoTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="docDateFrom" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="docDateTo" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IA_GetSummaryByParamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IA_GetSummaryByParamResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IA_Update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="saveData" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IA_UpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IA_UpdateResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IC_ApprovalBusiness">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="flagApp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IC_ApprovalBusinessResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IC_CheckNoExists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IC_CheckNoExistsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IC_CheckNoExistsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IC_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IC_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IC_DeleteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IC_GetBusinessByKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IC_GetBusinessByKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IC_GetBusinessByKeyResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IC_GetSummaryByParam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="DocNoFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocNoTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="docDateFrom" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="docDateTo" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IC_GetSummaryByParamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IC_GetSummaryByParamResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IC_Update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="saveData" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IC_UpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IC_UpdateResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IN_ApprovalBusiness">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="flagApp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IN_ApprovalBusinessResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IN_CheckNoExists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IN_CheckNoExistsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IN_CheckNoExistsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IN_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IN_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IN_DeleteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IN_GetBusinessByKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IN_GetBusinessByKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IN_GetBusinessByKeyResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IN_GetSummaryByParam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="DocNoFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocNoTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="docDateFrom" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="docDateTo" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IN_GetSummaryByParamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IN_GetSummaryByParamResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IN_Update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="saveData" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IN_UpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IN_UpdateResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO_ApprovalBusiness">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="flagApp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO_ApprovalBusinessResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO_CheckNoExists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO_CheckNoExistsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IO_CheckNoExistsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO_Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO_DeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IO_DeleteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO_GetBusinessByKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="keyValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO_GetBusinessByKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IO_GetBusinessByKeyResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO_GetSummaryByParam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="DocNoFrom" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocNoTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="docDateFrom" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="docDateTo" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO_GetSummaryByParamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IO_GetSummaryByParamResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO_Update">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginTicket" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="saveData" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO_UpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IO_UpdateResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

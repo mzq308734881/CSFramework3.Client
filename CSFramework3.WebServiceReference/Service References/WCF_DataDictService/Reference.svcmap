@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bb55f0a7-546d-447d-86ce-dec4265eaaef" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2345/WCF_Server/DataDictService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DataDictService.xsd" MetadataType="Schema" ID="711c0964-d9f8-47a1-ad15-5fa50047f24d" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/DataDictService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DataDictService.disco" MetadataType="Disco" ID="12c14543-c1a8-40a2-aa39-262c8d41fa2c" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/DataDictService.svc?disco" />
+    <MetadataFile FileName="DataDictService.wsdl" MetadataType="Wsdl" ID="e3b5f651-3cd2-4d95-99b9-473099f9ce79" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/DataDictService.svc?wsdl" />
+    <MetadataFile FileName="DataDictService1.xsd" MetadataType="Schema" ID="b908bc90-c8f4-4196-b886-19322f080e50" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/DataDictService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,247 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F0C39712-4D98-4C86-93DE-179E24C66CC2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSFramework3.DataDictionary</RootNamespace>
+    <AssemblyName>CSFramework3.DataDictionary</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommonDataDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommonDataDict.Designer.cs">
+      <DependentUpon>frmCommonDataDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDataDictionaryMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataDictionaryMain.Designer.cs">
+      <DependentUpon>frmDataDictionaryMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerson.Designer.cs">
+      <DependentUpon>frmPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduct.Designer.cs">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTestChild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTestChild.Designer.cs">
+      <DependentUpon>frmTestChild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCommonDataDict.resx">
+      <DependentUpon>frmCommonDataDict.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDataDictionaryMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDataDictionaryMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerson.resx">
+      <DependentUpon>frmPerson.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduct.resx">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTestChild.resx">
+      <DependentUpon>frmTestChild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vjsdn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vjsdn_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_CustomsStock.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16_Connets.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Products.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_Customer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find50x50.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_UserIns.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_Warehouse.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_Bank.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_CommissionCalculate.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_Currency.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_GiftExchange.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_HrPeriod.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_IssueFactory.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_Item.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_Job.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_ManageExpenses.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_NewProduct.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_Payment.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_PaymentType.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48_Stock.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSFramework.Common\CSFramework.Common.csproj">
+      <Project>{269ECEFF-B6C2-4708-86BA-AFBB1A2B045C}</Project>
+      <Name>CSFramework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSFramework.Core\CSFramework.Core.csproj">
+      <Project>{2A59861C-5D4D-4768-B31F-7F59A8517DAE}</Project>
+      <Name>CSFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSFramework.Library\CSFramework.Library.csproj">
+      <Project>{CC733F2A-65DE-411F-9093-71CD3A5D9B27}</Project>
+      <Name>CSFramework.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSFramework3.Business\CSFramework3.Business.csproj">
+      <Project>{A674DB78-C6CB-409B-893D-728ABF88EC84}</Project>
+      <Name>CSFramework3.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSFramework3.Interfaces\CSFramework3.Interfaces.csproj">
+      <Project>{E96FA431-A247-49F3-892B-03E411957180}</Project>
+      <Name>CSFramework3.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSFramework3.Models\CSFramework3.Models.csproj">
+      <Project>{2CF256B2-F5E0-4670-8644-08DDF65B0009}</Project>
+      <Name>CSFramework3.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-for-app1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bk_reg.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

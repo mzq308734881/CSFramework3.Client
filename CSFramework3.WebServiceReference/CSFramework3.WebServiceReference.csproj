@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{830D9756-D0F4-4140-8AFC-500E8ECA03C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSFramework3.WebServiceReference</RootNamespace>
+    <AssemblyName>CSFramework3.WebServiceReference</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Service References\WCF_AccountModuleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCF_CommonService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCF_DataDictService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCF_InventoryModuleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCF_PurchaseModuleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCF_SalesModuleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WCF_SystemSecurityService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SoapClientConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoapClientFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WCF_AccountModuleService\" />
+    <WCFMetadataStorage Include="Service References\WCF_CommonService\" />
+    <WCFMetadataStorage Include="Service References\WCF_DataDictService\" />
+    <WCFMetadataStorage Include="Service References\WCF_InventoryModuleService\" />
+    <WCFMetadataStorage Include="Service References\WCF_PurchaseModuleService\" />
+    <WCFMetadataStorage Include="Service References\WCF_SalesModuleService\" />
+    <WCFMetadataStorage Include="Service References\WCF_SystemSecurityService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_CommonService\CommonService.disco" />
+    <None Include="Service References\WCF_CommonService\CommonService.wsdl" />
+    <None Include="Service References\WCF_CommonService\CommonService.xsd" />
+    <None Include="Service References\WCF_CommonService\CommonService1.xsd" />
+    <None Include="Service References\WCF_CommonService\CommonService2.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_CommonService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_CommonService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_CommonService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\WCF_DataDictService\DataDictService.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_DataDictService\DataDictService.disco" />
+    <None Include="Service References\WCF_DataDictService\DataDictService.wsdl" />
+    <None Include="Service References\WCF_DataDictService\DataDictService1.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_DataDictService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_DataDictService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_DataDictService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\WCF_SalesModuleService\SalesModuleService.wsdl" />
+    <None Include="Service References\WCF_SalesModuleService\SalesModuleService.xsd" />
+    <None Include="Service References\WCF_SalesModuleService\SalesModuleService1.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_SalesModuleService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_SalesModuleService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_SalesModuleService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\WCF_SystemSecurityService\SystemSecurityService.wsdl" />
+    <None Include="Service References\WCF_SystemSecurityService\SystemSecurityService.xsd" />
+    <None Include="Service References\WCF_SystemSecurityService\SystemSecurityService1.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_SystemSecurityService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_SystemSecurityService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_PurchaseModuleService\PurchaseModuleService.wsdl" />
+    <None Include="Service References\WCF_PurchaseModuleService\PurchaseModuleService.xsd" />
+    <None Include="Service References\WCF_PurchaseModuleService\PurchaseModuleService1.xsd" />
+    <None Include="Service References\WCF_SystemSecurityService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSFramework.Common\CSFramework.Common.csproj">
+      <Project>{269ECEFF-B6C2-4708-86BA-AFBB1A2B045C}</Project>
+      <Name>CSFramework.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_PurchaseModuleService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_PurchaseModuleService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_PurchaseModuleService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_InventoryModuleService\InventoryModuleService.disco" />
+    <None Include="Service References\WCF_InventoryModuleService\InventoryModuleService.wsdl" />
+    <None Include="Service References\WCF_InventoryModuleService\InventoryModuleService.xsd" />
+    <None Include="Service References\WCF_InventoryModuleService\InventoryModuleService1.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_InventoryModuleService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_InventoryModuleService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_AccountModuleService\AccountModuleService.wsdl" />
+    <None Include="Service References\WCF_AccountModuleService\AccountModuleService.xsd" />
+    <None Include="Service References\WCF_AccountModuleService\AccountModuleService1.xsd" />
+    <None Include="Service References\WCF_InventoryModuleService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_AccountModuleService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_AccountModuleService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WCF_AccountModuleService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

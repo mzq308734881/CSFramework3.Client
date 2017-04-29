@@ -1,0 +1,101 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CF256B2-F5E0-4670-8644-08DDF65B0009}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSFramework3.Models</RootNamespace>
+    <AssemblyName>CSFramework3.Models</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessModels\tb_AP.cs" />
+    <Compile Include="BusinessModels\tb_APs.cs" />
+    <Compile Include="BusinessModels\tb_AR.cs" />
+    <Compile Include="BusinessModels\tb_ARs.cs" />
+    <Compile Include="BusinessModels\tb_IA.cs" />
+    <Compile Include="BusinessModels\tb_IAs.cs" />
+    <Compile Include="BusinessModels\tb_IN.cs" />
+    <Compile Include="BusinessModels\tb_INs.cs" />
+    <Compile Include="BusinessModels\tb_IO.cs" />
+    <Compile Include="BusinessModels\tb_IOs.cs" />
+    <Compile Include="BusinessModels\tb_IC.cs" />
+    <Compile Include="BusinessModels\tb_ICs.cs" />
+    <Compile Include="DataDictModels\tb_AccountIDs.cs" />
+    <Compile Include="DataDictModels\tb_Currency.cs" />
+    <Compile Include="DataDictModels\tb_Location.cs" />
+    <Compile Include="DataDictModels\sys_BusinessTables.cs" />
+    <Compile Include="SystemModels\tb_DataSet.cs" />
+    <Compile Include="BusinessModels\tb_PO.cs" />
+    <Compile Include="BusinessModels\tb_POs.cs" />
+    <Compile Include="BusinessModels\tb_SOs.cs" />
+    <Compile Include="DataDictModels\tb_CommonDataDict.cs" />
+    <Compile Include="DataDictModels\tb_CommonDataDictType.cs" />
+    <Compile Include="DataDictModels\tb_Customer.cs" />
+    <Compile Include="DataDictModels\tb_CustomerAttribute.cs" />
+    <Compile Include="DataDictModels\tb_PayType.cs" />
+    <Compile Include="DataDictModels\tb_Person.cs" />
+    <Compile Include="DataDictModels\tb_Product.cs" />
+    <Compile Include="SystemModels\BusinessCommonFields.cs" />
+    <Compile Include="BusinessModels\tb_SO.cs" />
+    <Compile Include="SystemModels\tb_CompanyInfo.cs" />
+    <Compile Include="SystemModels\TEmailBody.cs" />
+    <Compile Include="SystemModels\TAttachFile.cs" />
+    <Compile Include="DataDictModels\tb_AttachFile.cs" />
+    <Compile Include="SystemModels\TCompanyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemModels\TMenu.cs" />
+    <Compile Include="SystemModels\TFormTagName.cs" />
+    <Compile Include="SystemModels\TUser.cs" />
+    <Compile Include="SystemModels\TUserRole.cs" />
+    <Compile Include="SystemModels\TUserGroup.cs" />
+    <Compile Include="SystemModels\TUserGroupRe.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSFramework.ORM\CSFramework.ORM.csproj">
+      <Project>{34000ABD-4169-45B5-A668-1901F1EB5FDE}</Project>
+      <Name>CSFramework.ORM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

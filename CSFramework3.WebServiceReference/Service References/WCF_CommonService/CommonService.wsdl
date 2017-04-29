@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="CommonService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_ICommonService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="14400000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2345/WCF_Server/CommonService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2345/WCF_Server/CommonService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:2345/WCF_Server/CommonService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICommonService_BackupDatabase_InputMessage">
+    <wsdl:part name="parameters" element="tns:BackupDatabase" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_BackupDatabase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BackupDatabaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetAttachedFiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttachedFiles" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetAttachedFiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttachedFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetBackupHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBackupHistory" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetBackupHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBackupHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetBusinessTables_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBusinessTables" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetBusinessTables_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBusinessTablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetDB4Backup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDB4Backup" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetDB4Backup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDB4BackupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetLogFieldDef_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLogFieldDef" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetLogFieldDef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLogFieldDefResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetModules_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModules" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetModules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetSystemDataSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemDataSet" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetSystemDataSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemDataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetTableFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTableFields" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetTableFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTableFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetTableFieldsDef_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTableFieldsDef" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetTableFieldsDef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTableFieldsDefResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetTracedFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTracedFields" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetTracedFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTracedFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_RestoreDatabase_InputMessage">
+    <wsdl:part name="parameters" element="tns:RestoreDatabase" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_RestoreDatabase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RestoreDatabaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SaveFieldDef_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveFieldDef" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SaveFieldDef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveFieldDefResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SearchLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLog" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SearchLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_TestConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestConnection" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_TestConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_WriteLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteLog" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_WriteLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetDataSN_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataSN" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_GetDataSN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataSNResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SearchOutstanding_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchOutstanding" />
+  </wsdl:message>
+  <wsdl:message name="ICommonService_SearchOutstanding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchOutstandingResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICommonService">
+    <wsdl:operation name="BackupDatabase">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/BackupDatabase" message="tns:ICommonService_BackupDatabase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/BackupDatabaseResponse" message="tns:ICommonService_BackupDatabase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachedFiles">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetAttachedFiles" message="tns:ICommonService_GetAttachedFiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetAttachedFilesResponse" message="tns:ICommonService_GetAttachedFiles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBackupHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetBackupHistory" message="tns:ICommonService_GetBackupHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetBackupHistoryResponse" message="tns:ICommonService_GetBackupHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBusinessTables">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetBusinessTables" message="tns:ICommonService_GetBusinessTables_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetBusinessTablesResponse" message="tns:ICommonService_GetBusinessTables_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDB4Backup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetDB4Backup" message="tns:ICommonService_GetDB4Backup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetDB4BackupResponse" message="tns:ICommonService_GetDB4Backup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogFieldDef">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetLogFieldDef" message="tns:ICommonService_GetLogFieldDef_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetLogFieldDefResponse" message="tns:ICommonService_GetLogFieldDef_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModules">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetModules" message="tns:ICommonService_GetModules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetModulesResponse" message="tns:ICommonService_GetModules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemDataSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetSystemDataSet" message="tns:ICommonService_GetSystemDataSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetSystemDataSetResponse" message="tns:ICommonService_GetSystemDataSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTableFields">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetTableFields" message="tns:ICommonService_GetTableFields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetTableFieldsResponse" message="tns:ICommonService_GetTableFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTableFieldsDef">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetTableFieldsDef" message="tns:ICommonService_GetTableFieldsDef_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetTableFieldsDefResponse" message="tns:ICommonService_GetTableFieldsDef_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTracedFields">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetTracedFields" message="tns:ICommonService_GetTracedFields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetTracedFieldsResponse" message="tns:ICommonService_GetTracedFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RestoreDatabase">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/RestoreDatabase" message="tns:ICommonService_RestoreDatabase_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/RestoreDatabaseResponse" message="tns:ICommonService_RestoreDatabase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveFieldDef">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SaveFieldDef" message="tns:ICommonService_SaveFieldDef_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SaveFieldDefResponse" message="tns:ICommonService_SaveFieldDef_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SearchLog" message="tns:ICommonService_SearchLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SearchLogResponse" message="tns:ICommonService_SearchLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestConnection">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/TestConnection" message="tns:ICommonService_TestConnection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/TestConnectionResponse" message="tns:ICommonService_TestConnection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/WriteLog" message="tns:ICommonService_WriteLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/WriteLogResponse" message="tns:ICommonService_WriteLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSN">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/GetDataSN" message="tns:ICommonService_GetDataSN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/GetDataSNResponse" message="tns:ICommonService_GetDataSN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchOutstanding">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommonService/SearchOutstanding" message="tns:ICommonService_SearchOutstanding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommonService/SearchOutstandingResponse" message="tns:ICommonService_SearchOutstanding_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ICommonService" type="tns:ICommonService">
+    <wsp:PolicyReference URI="#WSHttpBinding_ICommonService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BackupDatabase">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/BackupDatabase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachedFiles">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/GetAttachedFiles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBackupHistory">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/GetBackupHistory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBusinessTables">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/GetBusinessTables" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDB4Backup">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/GetDB4Backup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogFieldDef">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/GetLogFieldDef" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModules">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/GetModules" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemDataSet">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/GetSystemDataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTableFields">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/GetTableFields" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTableFieldsDef">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/GetTableFieldsDef" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTracedFields">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/GetTracedFields" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RestoreDatabase">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/RestoreDatabase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveFieldDef">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/SaveFieldDef" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchLog">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/SearchLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestConnection">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/TestConnection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteLog">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/WriteLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSN">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/GetDataSN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchOutstanding">
+      <soap12:operation soapAction="http://tempuri.org/ICommonService/SearchOutstanding" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CommonService">
+    <wsdl:port name="WSHttpBinding_ICommonService" binding="tns:WSHttpBinding_ICommonService">
+      <soap12:address location="http://localhost:2345/WCF_Server/CommonService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:2345/WCF_Server/CommonService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

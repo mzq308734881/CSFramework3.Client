@@ -1,0 +1,105 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1317673-F72E-404C-B7FA-D5B09EF40665}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSFramework3.Server.DataAccess</RootNamespace>
+    <AssemblyName>CSFramework3.Server.DataAccess</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\CSFramework3.Client\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL_Business\dalAP.cs" />
+    <Compile Include="DAL_Business\dalAR.cs" />
+    <Compile Include="DAL_Business\dalIA.cs" />
+    <Compile Include="DAL_Business\dalPO.cs" />
+    <Compile Include="DAL_Business\dalIN.cs" />
+    <Compile Include="DAL_Business\dalIO.cs" />
+    <Compile Include="DAL_Business\dalIC.cs" />
+    <Compile Include="DAL_DataDict\dalAccountIDs.cs" />
+    <Compile Include="DAL_System\dalAttachFile.cs" />
+    <Compile Include="DAL_Base\dalBase.cs" />
+    <Compile Include="DAL_Base\dalBaseBusiness.cs" />
+    <Compile Include="DAL_Base\dalBaseDataDict.cs" />
+    <Compile Include="DAL_System\dalCompanyInfo.cs" />
+    <Compile Include="DAL_System\dalMenu.cs" />
+    <Compile Include="DAL_System\dalUser.cs" />
+    <Compile Include="DAL_System\dalUserGroup.cs" />
+    <Compile Include="DAL_System\DataProvider.cs" />
+    <Compile Include="DAL_System\DefaultORM.cs" />
+    <Compile Include="DAL_System\DocNoTool.cs" />
+    <Compile Include="DAL_System\ServerLibrary.cs" />
+    <Compile Include="DAL_System\SqlBuilder.cs" />
+    <Compile Include="DAL_Business\dalSO.cs" />
+    <Compile Include="DAL_System\dalCommon.cs" />
+    <Compile Include="DAL_DataDict\dalCommonDataDict.cs" />
+    <Compile Include="DAL_DataDict\dalCustomer.cs" />
+    <Compile Include="DAL_DataDict\dalPerson.cs" />
+    <Compile Include="DAL_DataDict\dalProduct.cs" />
+    <Compile Include="DAL_System\dalEditLogHistory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CSFramework3.Client\CSFramework.Common\CSFramework.Common.csproj">
+      <Project>{269ECEFF-B6C2-4708-86BA-AFBB1A2B045C}</Project>
+      <Name>CSFramework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CSFramework3.Client\CSFramework.Core\CSFramework.Core.csproj">
+      <Project>{2A59861C-5D4D-4768-B31F-7F59A8517DAE}</Project>
+      <Name>CSFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CSFramework3.Client\CSFramework.ORM\CSFramework.ORM.csproj">
+      <Project>{34000ABD-4169-45B5-A668-1901F1EB5FDE}</Project>
+      <Name>CSFramework.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CSFramework3.Client\CSFramework3.Interfaces\CSFramework3.Interfaces.csproj">
+      <Project>{E96FA431-A247-49F3-892B-03E411957180}</Project>
+      <Name>CSFramework3.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CSFramework3.Client\CSFramework3.Models\CSFramework3.Models.csproj">
+      <Project>{2CF256B2-F5E0-4670-8644-08DDF65B0009}</Project>
+      <Name>CSFramework3.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

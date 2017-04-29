@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2d3a96bf-87ab-41cc-b5e5-575021bfa055" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2345/WCF_Server/AccountModuleService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AccountModuleService.xsd" MetadataType="Schema" ID="1ef1f06c-f0c5-44fe-8397-4636da910e73" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/AccountModuleService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AccountModuleService1.xsd" MetadataType="Schema" ID="839ce00c-6ce1-494d-bb6e-29b770254a36" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/AccountModuleService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AccountModuleService.wsdl" MetadataType="Wsdl" ID="ef4b2962-318b-487f-9930-2bed30e93238" SourceId="1" SourceUrl="http://localhost:2345/WCF_Server/AccountModuleService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

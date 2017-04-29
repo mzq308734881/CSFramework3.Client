@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E96FA431-A247-49F3-892B-03E411957180}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSFramework3.Interfaces</RootNamespace>
+    <AssemblyName>CSFramework3.Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces_Bridge\IBridge_AttachFile.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_CommonDAL.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_PO.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_SystemLog.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_UserGroup.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_IA.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_IN.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_IO.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_IC.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_AR.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_AP.cs" />
+    <Compile Include="Interfaces_System\IAttachmentStorage.cs" />
+    <Compile Include="Interfaces_System\IBusinessSupportable.cs" />
+    <Compile Include="Interfaces_System\IButtonInfo.cs" />
+    <Compile Include="Interfaces_System\IButtonList.cs" />
+    <Compile Include="Interfaces_System\IDataOperatable.cs" />
+    <Compile Include="Interfaces_System\IFormBase.cs" />
+    <Compile Include="Interfaces_System\IFuzzySearchSupportable.cs" />
+    <Compile Include="Interfaces_System\ILoginAuthorization.cs" />
+    <Compile Include="Interfaces_System\ILogSupportable.cs" />
+    <Compile Include="Interfaces_System\IMdiChildForm.cs" />
+    <Compile Include="Interfaces_System\IMdiForm.cs" />
+    <Compile Include="Interfaces_System\IModuleBase.cs" />
+    <Compile Include="Interfaces_System\IModuleID.cs" />
+    <Compile Include="Interfaces_System\IMsg.cs" />
+    <Compile Include="Interfaces_System\IObserver.cs" />
+    <Compile Include="Interfaces_System\IPurviewControllable.cs" />
+    <Compile Include="Interfaces_System\ISummaryView.cs" />
+    <Compile Include="Interfaces_System\ISystemLog.cs" />
+    <Compile Include="Interfaces_System\IToolbarRegister.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_CommonDataDict.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_Customer.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_DataDict.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_Product.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_SO.cs" />
+    <Compile Include="Interfaces_Bridge\IBridge_User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSFramework.Common\CSFramework.Common.csproj">
+      <Project>{269ECEFF-B6C2-4708-86BA-AFBB1A2B045C}</Project>
+      <Name>CSFramework.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
